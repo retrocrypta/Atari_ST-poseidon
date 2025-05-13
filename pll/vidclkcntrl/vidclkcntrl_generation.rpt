@@ -1,0 +1,33 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /mnt/Teradisk/TALLER_PORT/calypso-ports/mist/pll/vidclkcntrl.qsys --block-symbol-file --output-directory=/mnt/Teradisk/TALLER_PORT/calypso-ports/mist/pll/vidclkcntrl --family="Cyclone IV GX" --part=EP4CGX150DF27I7
+Progress: Loading pll/vidclkcntrl.qsys
+Progress: Reading input file
+Progress: Adding altclkctrl_0 [altclkctrl 23.1]
+Progress: Parameterizing module altclkctrl_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: vidclkcntrl.altclkctrl_0: Targeting device family: Cyclone IV GX.
+: vidclkcntrl.altclkctrl_0: Global clock network allows a clock signal to reach all parts of the chip with the same amount of skew. Input port 'clkselect' can be used to switch between four clock inputs.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /mnt/Teradisk/TALLER_PORT/calypso-ports/mist/pll/vidclkcntrl.qsys --synthesis=VERILOG --output-directory=/mnt/Teradisk/TALLER_PORT/calypso-ports/mist/pll/vidclkcntrl/synthesis --family="Cyclone IV GX" --part=EP4CGX150DF27I7
+Progress: Loading pll/vidclkcntrl.qsys
+Progress: Reading input file
+Progress: Adding altclkctrl_0 [altclkctrl 23.1]
+Progress: Parameterizing module altclkctrl_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: vidclkcntrl.altclkctrl_0: Targeting device family: Cyclone IV GX.
+: vidclkcntrl.altclkctrl_0: Global clock network allows a clock signal to reach all parts of the chip with the same amount of skew. Input port 'clkselect' can be used to switch between four clock inputs.
+Info: vidclkcntrl: Generating vidclkcntrl "vidclkcntrl" for QUARTUS_SYNTH
+Info: altclkctrl_0: Generating top-level entity vidclkcntrl_altclkctrl_0.
+Info: altclkctrl_0: "vidclkcntrl" instantiated altclkctrl "altclkctrl_0"
+Info: vidclkcntrl: Done "vidclkcntrl" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

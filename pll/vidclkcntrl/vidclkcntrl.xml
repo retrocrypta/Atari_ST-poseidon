@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.05.13.21:09:05"
+ outputDirectory="/mnt/Teradisk/TALLER_PORT/calypso-ports/mist/pll/vidclkcntrl/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone IV GX"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="EP4CGX150DF27I7"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="7"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="altclkctrl_input" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="inclk1x" direction="input" role="inclk1x" width="1" />
+   <port name="inclk0x" direction="input" role="inclk0x" width="1" />
+   <port name="clkselect" direction="input" role="clkselect" width="1" />
+  </interface>
+  <interface name="altclkctrl_output" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="outclk" direction="output" role="outclk" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="vidclkcntrl:1.0:AUTO_DEVICE=EP4CGX150DF27I7,AUTO_DEVICE_FAMILY=Cyclone IV GX,AUTO_DEVICE_SPEEDGRADE=7,AUTO_GENERATION_ID=1747163345,AUTO_UNIQUE_ID=(altclkctrl:23.1:CLOCK_TYPE=1,DEVICE_FAMILY=Cyclone IV GX,ENA_REGISTER_MODE=1,GUI_USE_ENA=false,NUMBER_OF_CLOCKS=2,USE_GLITCH_FREE_SWITCH_OVER_IMPLEMENTATION=true)"
+   instancePathKey="vidclkcntrl"
+   kind="vidclkcntrl"
+   version="1.0"
+   name="vidclkcntrl">
+  <parameter name="AUTO_GENERATION_ID" value="1747163345" />
+  <parameter name="AUTO_DEVICE" value="EP4CGX150DF27I7" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV GX" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7" />
+  <generatedFiles>
+   <file
+       path="/mnt/Teradisk/TALLER_PORT/calypso-ports/mist/pll/vidclkcntrl/synthesis/vidclkcntrl.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/mnt/Teradisk/TALLER_PORT/calypso-ports/mist/pll/vidclkcntrl/synthesis/submodules/vidclkcntrl_altclkctrl_0.v"
+       type="VERILOG"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/mnt/Teradisk/TALLER_PORT/calypso-ports/mist/pll/vidclkcntrl.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/mnt/SSD_256/Quartus23/ip/altera/megafunctions/altclkctrl/altclkctrl_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="vidclkcntrl">queue size: 0 starting:vidclkcntrl "vidclkcntrl"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="vidclkcntrl"><![CDATA["<b>vidclkcntrl</b>" reuses <b>altclkctrl</b> "<b>submodules/vidclkcntrl_altclkctrl_0</b>"]]></message>
+   <message level="Debug" culprit="vidclkcntrl">queue size: 0 starting:altclkctrl "submodules/vidclkcntrl_altclkctrl_0"</message>
+   <message level="Info" culprit="altclkctrl_0">Generating top-level entity vidclkcntrl_altclkctrl_0.</message>
+   <message level="Debug" culprit="altclkctrl_0">Current quartus bindir: /mnt/SSD_256/Quartus23/quartus/linux64/.</message>
+   <message level="Info" culprit="altclkctrl_0"><![CDATA["<b>vidclkcntrl</b>" instantiated <b>altclkctrl</b> "<b>altclkctrl_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altclkctrl:23.1:CLOCK_TYPE=1,DEVICE_FAMILY=Cyclone IV GX,ENA_REGISTER_MODE=1,GUI_USE_ENA=false,NUMBER_OF_CLOCKS=2,USE_GLITCH_FREE_SWITCH_OVER_IMPLEMENTATION=true"
+   instancePathKey="vidclkcntrl:.:altclkctrl_0"
+   kind="altclkctrl"
+   version="23.1"
+   name="vidclkcntrl_altclkctrl_0">
+  <parameter name="NUMBER_OF_CLOCKS" value="2" />
+  <parameter name="USE_GLITCH_FREE_SWITCH_OVER_IMPLEMENTATION" value="true" />
+  <parameter name="GUI_USE_ENA" value="false" />
+  <parameter name="DEVICE_FAMILY" value="Cyclone IV GX" />
+  <parameter name="ENA_REGISTER_MODE" value="1" />
+  <parameter name="CLOCK_TYPE" value="1" />
+  <generatedFiles>
+   <file
+       path="/mnt/Teradisk/TALLER_PORT/calypso-ports/mist/pll/vidclkcntrl/synthesis/submodules/vidclkcntrl_altclkctrl_0.v"
+       type="VERILOG"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="/mnt/SSD_256/Quartus23/ip/altera/megafunctions/altclkctrl/altclkctrl_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="vidclkcntrl" as="altclkctrl_0" />
+  <messages>
+   <message level="Debug" culprit="vidclkcntrl">queue size: 0 starting:altclkctrl "submodules/vidclkcntrl_altclkctrl_0"</message>
+   <message level="Info" culprit="altclkctrl_0">Generating top-level entity vidclkcntrl_altclkctrl_0.</message>
+   <message level="Debug" culprit="altclkctrl_0">Current quartus bindir: /mnt/SSD_256/Quartus23/quartus/linux64/.</message>
+   <message level="Info" culprit="altclkctrl_0"><![CDATA["<b>vidclkcntrl</b>" instantiated <b>altclkctrl</b> "<b>altclkctrl_0</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>
