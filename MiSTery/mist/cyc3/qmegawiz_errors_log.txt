@@ -1,0 +1,28 @@
+
+
+/mnt/Teradisk/TALLER_PORT/calypso-ports/mist/MiSTery/mist/cyc3/clock.v
+
+May 13 07PM:56:51>: Error in CNX file format.
+
+Error messages are listed in file
+/mnt/Teradisk/TALLER_PORT/calypso-ports/mist/MiSTery/mist/cyc3/clock.cnxerr.
+
+Can't create the custom megafunction variation file(s)
+
+/mnt/Teradisk/TALLER_PORT/calypso-ports/mist/MiSTery/mist/cyc3/clock.v
+
+May 13 08PM:18:47>: Error in CNX file format.
+
+Error messages are listed in file
+/mnt/Teradisk/TALLER_PORT/calypso-ports/mist/MiSTery/mist/cyc3/clock.cnxerr.
+
+Can't create the custom megafunction variation file(s)
+
+/mnt/Teradisk/TALLER_PORT/calypso-ports/mist/MiSTery/mist/cyc3/clock.v
+
+May 13 08PM:20:45>: Error in CNX file format.
+
+Error messages are listed in file
+/mnt/Teradisk/TALLER_PORT/calypso-ports/mist/MiSTery/mist/cyc3/clock.cnxerr.
+
+Can't create the custom megafunction variation file(s)
