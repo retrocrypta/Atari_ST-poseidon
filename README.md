@@ -5,7 +5,7 @@ Atari_ST-poseidon
 # Information
 Atari ST core based on the MiSTery core that can be found [here](https://github.com/gyurco/MiSTery)
 
-Ported from Calypso by Teiram [here](https://github.com/teiram/calypso-ports/tree/master/mist)
+Ported to Calypso by Teiram [here](https://github.com/teiram/calypso-ports/tree/master/mist)
 
 Ported to Poseidon by ron retrocrypta
 
